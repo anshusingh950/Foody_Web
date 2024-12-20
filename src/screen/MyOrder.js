@@ -71,7 +71,7 @@ export default function MyOrder() {
     let eml=localStorage.getItem( "userEmail")
    
     const loadData = async () => {
-        let dt = await fetch("http://localhost:5000/api/GetOrders", {
+        let dt = await fetch("https://foody-web.onrender.com/api/GetOrders", {
             method: "POST",
             headers: { 
                 "Content-Type": 'application/json'

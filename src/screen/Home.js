@@ -24,7 +24,7 @@ export default function Home() {
     const [item, setItem] = useState([]);
     const [category, setCategory] = useState([]);
     const loadData = async () => {
-        let dt = await fetch("http://localhost:5000/api/foodData", {
+        let dt = await fetch("https://foody-web.onrender.com/api/foodData", {
             method: "POST",
             headers: {
                 "Content-Type": 'application/json'

@@ -16,7 +16,7 @@ export default function Cart() {
     let totalPrice = data.reduce((total, food) => total + food.price, 0);
     const handleclick=async()=>{
         let userEmail=localStorage.getItem("userEmail");
-        let url="http://localhost:5000/api/OrderData"; 
+        let url="https://foody-web.onrender.com/api/OrderData"; 
         let response=await fetch(url,{
             method:'POST',
             headers:{
